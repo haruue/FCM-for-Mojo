@@ -49,9 +49,9 @@
             android:name=".receiver.NotificationReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="${applicationId}.intent.action.REPLY" />
-                <action android:name="${applicationId}.intent.action.CONTENT" />
-                <action android:name="${applicationId}.intent.action.DELETE" />
+                <action android:name="${applicationId}.action.REPLY" />
+                <action android:name="${applicationId}.action.CONTENT" />
+                <action android:name="${applicationId}.action.DELETE" />
             </intent-filter>
         </receiver>
 
