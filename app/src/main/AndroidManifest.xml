@@ -52,6 +52,7 @@
                 <action android:name="${applicationId}.action.REPLY" />
                 <action android:name="${applicationId}.action.CONTENT" />
                 <action android:name="${applicationId}.action.DELETE" />
+                <action android:name="${applicationId}.action.OPEN_SCAN" />
             </intent-filter>
         </receiver>
 
