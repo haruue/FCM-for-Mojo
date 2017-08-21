@@ -46,13 +46,14 @@
         </activity>
 
         <receiver
-            android:name=".receiver.NotificationReceiver"
+            android:name=".receiver.FFMBroadcastReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="${applicationId}.action.REPLY" />
                 <action android:name="${applicationId}.action.CONTENT" />
                 <action android:name="${applicationId}.action.DELETE" />
                 <action android:name="${applicationId}.action.OPEN_SCAN" />
+                <action android:name="${applicationId}.action.DISMISS_SYSTEM_NOTIFICATION" />
             </intent-filter>
         </receiver>
 
