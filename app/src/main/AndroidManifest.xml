@@ -54,6 +54,7 @@
                 <action android:name="${applicationId}.action.DELETE" />
                 <action android:name="${applicationId}.action.OPEN_SCAN" />
                 <action android:name="${applicationId}.action.DISMISS_SYSTEM_NOTIFICATION" />
+                <action android:name="${applicationId}.action.COPY_TO_CLIPBOARD" />
             </intent-filter>
         </receiver>
 
@@ -64,6 +65,16 @@
         <activity
             android:name=".RegistrationIdsActivity"
             android:label="@string/manage_devices" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
 
     </application>
 
