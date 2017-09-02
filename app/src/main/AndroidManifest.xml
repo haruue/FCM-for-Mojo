@@ -47,9 +47,8 @@
         </activity>
 
         <activity
-            android:name=".WhitelistActivity"
+            android:name=".GroupWhitelistActivity"
             android:label="@string/per_group_settings"/>
-
 
         <receiver
             android:name=".receiver.FFMBroadcastReceiver"
